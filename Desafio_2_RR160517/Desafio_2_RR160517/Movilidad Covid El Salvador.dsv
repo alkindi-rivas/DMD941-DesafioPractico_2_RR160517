@@ -1,0 +1,146 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e07dad25-c304-4881-8e48-ffbc03faead5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Movilidad Covid El Salvador</ID>
+  <Name>Movilidad Covid El Salvador</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Movilidad Covid El Salvador</DataSourceID>
+  <Schema>
+    <xs:schema id="Movilidad_x0020_Covid_x0020_El_x0020_Salvador" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Movilidad_x0020_Covid_x0020_El_x0020_Salvador" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="f5d94fe3-e187-4398-b693-f215c7e625ad">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_dimCategoria" msprop:DbTableName="dimCategoria" msprop:FriendlyName="dimCategoria" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="1ff868fc-b31a-4542-9fc3-9f48d269f514">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idCategoria" msprop:FriendlyName="idCategoria" msprop:DbColumnName="idCategoria" msprop:design-time-name="b5d4e8d9-4c44-4d8b-aa0e-6b42c3124f76" type="xs:int" />
+                  <xs:element name="nombre_categoria" msprop:FriendlyName="nombre_categoria" msprop:DbColumnName="nombre_categoria" msprop:design-time-name="4f12d59a-310d-43e0-b4ed-6f7ffafa00c4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dimTiempo" msprop:DbTableName="dimTiempo" msprop:FriendlyName="dimTiempo" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="5f07ea24-e496-4685-9b54-1a108c59f9b7">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idTiempo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="idTiempo" msprop:DbColumnName="idTiempo" msprop:design-time-name="bfe01de5-288d-4061-9cf4-d19c8aaf0fb2" type="xs:int" />
+                  <xs:element name="fecha" msprop:FriendlyName="fecha" msprop:DbColumnName="fecha" msprop:design-time-name="3b48369e-8598-47dc-a983-add14f54bed7" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="anio" msprop:FriendlyName="anio" msprop:DbColumnName="anio" msprop:design-time-name="783d9073-4b81-4263-bbdb-72556c381166" type="xs:int" minOccurs="0" />
+                  <xs:element name="mes" msprop:FriendlyName="mes" msprop:DbColumnName="mes" msprop:design-time-name="c029f380-06ca-4cc4-a372-d36854b4a59c" type="xs:int" minOccurs="0" />
+                  <xs:element name="dia" msprop:FriendlyName="dia" msprop:DbColumnName="dia" msprop:design-time-name="34aa4188-baf5-45f1-93df-60452a40dfca" type="xs:int" minOccurs="0" />
+                  <xs:element name="nombre_dia" msprop:FriendlyName="nombre_dia" msprop:DbColumnName="nombre_dia" msprop:design-time-name="b1196478-9ca6-486c-8a57-b754c6ff3c8d" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dimUbicacion" msprop:DbTableName="dimUbicacion" msprop:FriendlyName="dimUbicacion" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="3f37a6c9-b27f-4e6c-933f-5ce8da32857f">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idUbicacion" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="idUbicacion" msprop:DbColumnName="idUbicacion" msprop:design-time-name="02be37df-5e41-4656-9155-2de6098b510d" type="xs:int" />
+                  <xs:element name="pais" msprop:FriendlyName="pais" msprop:DbColumnName="pais" msprop:design-time-name="b8a97e0e-f5a2-43d4-bcd4-776a65449539" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="departamento" msprop:FriendlyName="departamento" msprop:DbColumnName="departamento" msprop:design-time-name="b430a912-48f7-4ce1-84f8-9546e61b5e48" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_HechosMovilidad" msprop:DbTableName="HechosMovilidad" msprop:FriendlyName="HechosMovilidad" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="e3d82f5d-10b8-44fa-b70f-0ea3c95a7ca7">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idHecho" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="idHecho" msprop:DbColumnName="idHecho" msprop:design-time-name="f9b0e771-645a-4f49-a709-944aec9a8888" type="xs:int" />
+                  <xs:element name="idTiempo" msprop:FriendlyName="idTiempo" msprop:DbColumnName="idTiempo" msprop:design-time-name="f70c2fe8-20fe-4b4a-b281-9a75cf9f9f42" type="xs:int" minOccurs="0" />
+                  <xs:element name="idUbicacion" msprop:FriendlyName="idUbicacion" msprop:DbColumnName="idUbicacion" msprop:design-time-name="4bf1b1e4-bca5-454a-a391-0d90158ed7f9" type="xs:int" minOccurs="0" />
+                  <xs:element name="idCategoria" msprop:FriendlyName="idCategoria" msprop:DbColumnName="idCategoria" msprop:design-time-name="a01c4059-453e-475c-93e2-5df79a5c7925" type="xs:int" minOccurs="0" />
+                  <xs:element name="valorCambio" msprop:FriendlyName="valorCambio" msprop:DbColumnName="valorCambio" msprop:design-time-name="603bcf07-8562-43f8-ab35-994bb66033ec" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dimCategoria" />
+          <xs:field xpath="idCategoria" />
+        </xs:unique>
+        <xs:unique name="dbo_dimTiempo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dimTiempo" />
+          <xs:field xpath="idTiempo" />
+        </xs:unique>
+        <xs:unique name="dbo_dimUbicacion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dimUbicacion" />
+          <xs:field xpath="idUbicacion" />
+        </xs:unique>
+        <xs:unique name="dbo_HechosMovilidad_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_HechosMovilidad" />
+          <xs:field xpath="idHecho" />
+        </xs:unique>
+        <xs:keyref name="FK__HechosMov__idTie__3E52440B" refer="dbo_dimTiempo_Constraint1">
+          <xs:selector xpath=".//dbo_HechosMovilidad" />
+          <xs:field xpath="idTiempo" />
+        </xs:keyref>
+        <xs:keyref name="FK__HechosMov__idUbi__3F466844" refer="dbo_dimUbicacion_Constraint1">
+          <xs:selector xpath=".//dbo_HechosMovilidad" />
+          <xs:field xpath="idUbicacion" />
+        </xs:keyref>
+        <xs:keyref name="FK__HechosMov__idCat__403A8C7D" refer="Constraint1">
+          <xs:selector xpath=".//dbo_HechosMovilidad" />
+          <xs:field xpath="idCategoria" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Movilidad_x0020_Covid_x0020_El_x0020_Salvador xmlns="" />
+  </Schema>
+</DataSourceView>
